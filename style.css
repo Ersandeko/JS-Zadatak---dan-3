@@ -13,14 +13,16 @@ body {
   .search-container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
     margin-bottom: 20px;
   }
   
-  .search-container input {
+  .search-container input,
+  .search-container select {
     padding: 10px;
-    width: 300px;
     border: 1px solid #ccc;
-    border-radius: 4px 0 0 4px;
+    border-radius: 4px;
     outline: none;
   }
   
@@ -30,13 +32,14 @@ body {
     color: #fff;
     border: none;
     cursor: pointer;
-    border-radius: 0 4px 4px 0;
+    border-radius: 4px;
     transition: background-color 0.3s;
   }
   
   .search-container button:hover {
     background-color: #555;
   }
+  
   
   .movie-container {
     display: flex;
@@ -75,7 +78,8 @@ body {
     font-size: 18px;
     margin: 0 0 10px;
     font-weight: bold;
-  }
+    text-align: center;    
+}
   
   .movie-year {
     color: #666;
